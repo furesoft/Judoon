@@ -1,2 +1,13 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿using Terminal.Gui;
+
+namespace Judoon;
+
+public static class Program
+{
+    public static void Main(string[] args)
+    {
+        Application.Run<MainWindow>();
+
+        Application.Shutdown();
+    }
+}
